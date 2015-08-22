@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14402527095280" configfile="/ContactWeb/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index" x="116" y="135" id="pf14402544341831" outlinks="pf14402545150312" inlinks="pf14402609830649" path="/index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="addContactForm" x="291" y="117" id="pf14402545150313" outlinks="pf14402584656245 pf14402588498997" inlinks="pf14402545150312" path="/addContactForm.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="success" x="360" y="288" id="pf14402584656246" outlinks="pf14402609830649" inlinks="pf14402584656245" path="/success.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="failed" x="492" y="60" id="pf14402588498998" inlinks="pf14402588498997" path="/failed.jsp"/>
+  <links id="pf14402545150312" target="pf14402545150313" source="pf14402544341831" outcome="addContactForm"/>
+  <links id="pf14402584656245" target="pf14402584656246" source="pf14402545150313" outcome="success"/>
+  <links id="pf14402588498997" target="pf14402588498998" source="pf14402545150313" outcome="failed"/>
+  <links id="pf14402609830649" target="pf14402544341831" source="pf14402584656246" outcome="index"/>
+</pageflow:Pageflow>
